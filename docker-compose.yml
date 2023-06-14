@@ -1,0 +1,14 @@
+version: '3'
+services:
+  seller-service:
+    build:
+      context: .
+      dockerfile: Dockerfile-seller
+    ports:
+      - 8080:8080
+  buyer-service:
+    build:
+      context: .
+      dockerfile: Dockerfile-buyer
+    ports:
+      - 8081:8080
